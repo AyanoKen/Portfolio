@@ -1,9 +1,9 @@
 body{
   font-family: "Montserrat";
-  color: white;
+  color: rgb(0, 238, 255);
   box-shadow: 0 0 40px 0px rgb(0, 238, 255);
   background: rgb(0,0,0);
-  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(32,24,77,1) 100%);
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgb(20, 15, 48) 100%);
 }
 
 .myName {
@@ -19,6 +19,7 @@ body{
 .colored-section{
   color: white;
   padding: 7% 15%;
+  padding-top: 5%;
   text-align: center;
   box-shadow: inset 0 0 40px 0px rgb(0, 238, 255);
   border: 4px solid white;
@@ -26,9 +27,18 @@ body{
   border-bottom: 2px solid white;
 }
 
+.colored-section h1 {
+  padding-bottom: 5%;
+}
+
+.white-section h1 {
+  padding-bottom: 5%;
+}
+
 .white-section{
   color: white;
   padding: 7% 15%;
+  padding-top: 5%;
   text-align: center;
   box-shadow: inset 0 0 40px 0px rgb(0, 238, 255);
   border: 4px solid white;
@@ -42,6 +52,11 @@ body{
   border: 4px solid white;
   border-top: 2px solid white;
   border-bottom: 2px solid white;
+  padding-bottom: 12%;
+}
+
+h5 {
+  color: rgb(0, 238, 255);
 }
 
 .container-fluid{
@@ -71,7 +86,6 @@ h2{
 h3{
   font-size: 1rem;
   margin: 0.5rem;
-  color: white;
 }
 
 .navbar{
@@ -108,8 +122,8 @@ h3{
   width: 80%;
 }
 
-#features{
-
+.feature{
+  color: #0ff;
 }
 
 .fa-check-circle, .fa-bullseye, .fa-heart{
@@ -117,7 +131,7 @@ h3{
 }
 
 .fa-heart:hover, .fa-bullseye:hover, .fa-check-circle:hover{
-  color: #617be3;
+  color: #ff007b;
 }
 
 /* #artwork{
@@ -183,7 +197,7 @@ h3{
 
 #footer a{
   margin: 10px;
-  color: white;
+  color: rgb(0, 238, 255);
 }
 
 #footer p{
@@ -202,11 +216,36 @@ a:hover{
 }
 
 .card{
-  box-shadow: 0 0 10px #617be3;
+  color: rgb(0, 238, 255);
+  box-shadow: 0 0 20px 0px rgb(0, 238, 255, 0.6);
 }
+
+.card-header {
+  background-color: black;
+  box-shadow: inset 0 0 40px 0px rgb(0, 238, 255);
+
+}
+
+.card-body {
+  background-color: black;
+}
+
+.card-body .download-button{
+  margin: 5% 3% 5% 0;
+  box-shadow: inset 0 0 10px 0px rgb(0, 238, 255);
+  color: rgb(0, 238, 255)
+}
+
+.card-body .download-button:hover {
+  background-color: black;
+  box-shadow: 0 0 40px 0px rgb(0, 238, 255);
+  color: white;
+}
+
 
 .card:hover{
   box-shadow: 0 0 20px #617be3;
+  box-shadow: 0 0 40px 0px rgb(0, 238, 255);
 }
 
 .hidden {
