@@ -8,7 +8,7 @@ body {
 }
 
 .navbar {
-  background-color: transparent;
+  background: radial-gradient(circle, #000000 40%, #141030);
   border-bottom: 2px solid #00fff6;
 }
 
@@ -75,6 +75,20 @@ body {
     0 0 100px #0ff;
 }
 
+.title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.5rem;
+  color: #00fff6;
+  z-index: 2;
+  text-shadow: 
+    0 0 5px #0ff,
+    0 0 10px #0ff,
+    0 0 20px #0ff,
+    0 0 40px #0ff,
+    0 0 80px #0ff,
+    0 0 100px #0ff;
+}
+
 #hero h5 {
   color: #ffffff;
 }
@@ -82,20 +96,23 @@ body {
 .features {
   display: flex;
   justify-content: space-around;
-  margin-top: 6%;
-  margin-bottom: 6%;
+  color: white;
 }
 
 .feature {
   text-align: center;
-  padding: 10px;
-  border-radius: 15px;
+  padding: 20px;
+  position: relative;
 }
 
 .feature i {
   font-size: 3rem;
   margin-bottom: 10px;
   color: #00fff6;
+}
+
+.feature:not(:last-child) {
+  border-right: 1px solid #00fff6; 
 }
 
 .btn-custom {
@@ -116,22 +133,8 @@ body {
 }
 
 .card {
-  background: #141030;
-  color: #ffffff;
-  border: none;
-  border-radius: 15px;
-  box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 30px rgba(0, 255, 255, 0.8);
-}
-
-.card-title {
-  font-family: 'Orbitron', sans-serif;
-  color: #00fff6;
+  color: rgb(0, 238, 255);
+  box-shadow: 0 0 20px 0px rgb(0, 238, 255, 0.6);
 }
 
 footer {
@@ -157,4 +160,63 @@ footer p {
 
 section {
   border-bottom: 2px solid #00fff6;
+  background: radial-gradient(circle, #000000 40%, #141030);
+}
+
+h3 {
+  font-size: 1rem;
+  margin: 0.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin: 0.5rem;
+  font-weight: 500;
+}
+
+.card{
+  color: rgb(0, 238, 255);
+  box-shadow: 0 0 20px 0px rgb(0, 238, 255, 0.6);
+}
+
+.card-header {
+  background-color: black;
+  box-shadow: inset 0 0 40px 0px rgb(0, 238, 255);
+
+}
+
+.card-body {
+  background-color: black;
+}
+
+.card-body .download-button{
+  margin: 5% 3% 5% 0;
+  box-shadow: inset 0 0 10px 0px rgb(0, 238, 255);
+  color: rgb(0, 238, 255)
+}
+
+.card-body .download-button:hover {
+  background-color: black;
+  box-shadow: 0 0 40px 0px rgb(0, 238, 255);
+  color: white;
+}
+
+.card:hover{
+  box-shadow: 0 0 20px #617be3;
+  box-shadow: 0 0 40px 0px rgb(0, 238, 255);
+}
+
+.pricing-card {
+  padding: 3% 2%;
+}
+
+.white-section {
+  color: #00fff6;
+  padding: 7% 15%;
+  padding-top: 5%;
+  text-align: center;
+}
+
+#ai-projects {
+  padding: 6%;
 }
