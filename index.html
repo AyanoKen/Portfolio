@@ -1,741 +1,91 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ayano</title>
 
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,900|Ubuntu&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@300;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
   <link rel="stylesheet" href="styles.css">
 
-  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
-
-  </script>
-
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-  <title>Ayano</title>
 </head>
 
 <body>
-
-  <div id="title">
-    <div class="container-fluid">
-      <nav class="navbar navbar-expand-lg navbar-dark">
-        <a href="#" class="navbar-brand myName">Ayano</a>
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
-            <li class="nav-item"><a href="https://drive.google.com/file/d/1gGiGtIaTlbsFMmEcztGAXw05EtVdNvyl/view?usp=sharing" class="nav-link" target="_blank">Resume</a></li>
-            <li class="nav-item"><a href="#footer" class="nav-link">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-
-      <div class="row">
-        <div class="col-lg-6">
-          <h1>Programmer & Designer</h1>
-          <h5>Hi, I am Ayano(Pen name). I am a software designer available for contract based work, with an aim to become a full time teacher someday</h5>
-
-          <div class="row">
-            <div class="col-md-6">
-              <a type="button" class="btn btn-dark btn-lg download-button art-trigger"><i class="fab fa-apple"></i> Game Dev View</a>
-            </div>
-            <div class="col-md-6">
-              <a type="button" class="btn btn-outline-light btn-lg download-button main-trigger"><i class="fab fa-google-play"></i> General View</a>
-            </div>
-          </div>
-
-          <!-- <div class="row">
-            <div class="col-md-6">
-              <a type="button" class="btn btn-dark btn-lg download-button"><i class="fab fa-apple"></i> Web Devl View</a>
-            </div>
-          </div> -->
-          
-        </div>
-        <!-- <div class="col-lg-6">
-          <img src="images/trio.png" alt="bird" class="trio-image">
-        </div> -->
-
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#">Ayano</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
       </div>
     </div>
-  </div>
+  </nav>
 
-  <div id="main-view" class="hidden">
-    <div id="features" class="white-section">
-
-      <div class="row">
-        <div class="col-lg-4 col-md-12 feature">
-          <i class="fas fa-check-circle fa-3x"></i>
-          <h2>Designer</h2>
-          <h3>Pursuing my masters currently in Game Development with focus on UI/UX. I am available for User Research, Game Design and UI Design</h3>
+    <section id="hero">
+      <div id="hero-content">
+        <h1>Programmer & Designer</h1>
+        <h5>Welcome to my portfolio. Explore my projects and journey.</h5>
+        <div class="mt-4">
+          <span style="font-size: 1.5rem; font-weight: bold; color: #00fff6;">View Projects</span>
         </div>
-  
-        <div class="col-lg-4 col-md-12 feature">
-          <i class="fas fa-bullseye fa-3x"></i>
-          <h2>Programmer</h2>
-          <h3>With a Bachelor's degree in Computer Science Engineering, I am also available for software development</h3>
+        <div class="mt-4">
+          <a href="#3d-art" class="btn btn-custom me-3">3D Art</a>
+          <a href="#game-development" class="btn btn-custom me-3">Game Development</a>
+          <a href="#ai-projects" class="btn btn-custom">AI Projects</a>
         </div>
-  
-        <div class="col-lg-4 col-md-12 feature">
-          <i class="fas fa-heart fa-3x"></i>
-          <h2>Consultant</h2>
-          <h3>Want to build a software but don't understand how to do it? Let me help you architect the software and guide you in the path of making it a reality</h3>
-        </div>
-  
       </div>
-  
-    </div>
-  
-    <section id="games" class="colored-section">
-      <div class="container">
-        <h1>Game Projects</h1>
-        <div class="row">
-          <div class="col-md-6 mb-4">
-            <div class="card">
-              <div class="card-body video-container">
-                <iframe width="100%" height="315" src="https://www.youtube.com/embed/lfAGyg3778g" frameborder="0" allowfullscreen></iframe>
-                <p class="mt-2">Basic Aim Trainer made using Unreal Engine</p>
-              </div>
-            </div>
+    </section>
+
+    <section>
+      <div>
+        <div class="features">
+          <div class="feature">
+            <i class="fas fa-check-circle"></i>
+            <h2>Designer</h2>
+            <p>Pursuing my master's in Game Development with a focus on UI/UX. I am available for User Research, Game Design, and UI Design.</p>
           </div>
-          <div class="col-md-6 mb-4">
-            <div class="card">
-              <div class="card-body video-container">
-                <iframe width="100%" height="315" src="https://www.youtube.com/embed/3JnndueVS2I" frameborder="0" allowfullscreen></iframe>
-                <p class="mt-2">Animations using Control Rigs and retargets</p>
-              </div>
-            </div>
+          <div class="feature">
+            <i class="fas fa-bullseye"></i>
+            <h2>Programmer</h2>
+            <p>With a Bachelor's in Computer Science Engineering, I am also available for software development.</p>
           </div>
-        </div>
-  
-        <div class="row">
-          <div class="col-md-6 mb-4">
-            <div class="card">
-              <div class="card-body video-container">
-                <iframe width="100%" height="315" src="https://www.youtube.com/embed/Bzm6P4sLhBs" frameborder="0" allowfullscreen></iframe>
-                <p class="mt-2">A Fallguys inspired puzzler game made using Unreal Engine</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 mb-4">
-            <div class="card">
-              <div class="card-body video-container">
-                <iframe width="100%" height="315" src="https://www.youtube.com/embed/HqGPUR88oTQ" frameborder="0" allowfullscreen></iframe>
-                <p class="mt-2">A Zombie FPS game made with Unity</p>
-              </div>
-            </div>
-          </div>
-        </div>
-  
-        <div class="row">
-          <div class="col-md-6 mb-4">
-            <div class="card">
-              <div class="card-body video-container">
-                <iframe width="100%" height="315" src="https://www.youtube.com/embed/LwF2nFlZP40" frameborder="0" allowfullscreen></iframe>
-                <p class="mt-2">A Platformer game made with Unity with a maze design</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 mb-4">
-            <div class="card">
-              <div class="card-body video-container">
-                <iframe width="100%" height="315" src="https://www.youtube.com/embed/IHVcepR4ZX0" frameborder="0" allowfullscreen></iframe>
-                <p class="mt-2">Classic Pong game made with Unity</p>
-              </div>
-            </div>
-          </div>
-        </div>
-  
-        <div class="row">
-          <div class="col-md-6 mb-4">
-            <div class="card">
-              <div class="card-body video-container">
-                <iframe width="100%" height="315" src="https://www.youtube.com/embed/2cjWH-CKsd8" frameborder="0" allowfullscreen></iframe>
-                <p class="mt-2">Classic Snake game made using Python</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 mb-4">
-            <div class="card">
-              <div class="card-body video-container">
-                <iframe width="100%" height="315" src="https://www.youtube.com/embed/wXVNINB68bE" frameborder="0" allowfullscreen></iframe>
-                <p class="mt-2">A simple betting game where player bets on a turtle in a race</p>
-              </div>
-            </div>
+          <div class="feature">
+            <i class="fas fa-heart"></i>
+            <h2>Consultant</h2>
+            <p>Want to build software but don't understand how to do it? Let me help you architect the software and guide you to make it a reality.</p>
           </div>
         </div>
       </div>
     </section>
+  
     
-    
-  
-    <section id="projects" class="white-section">
-      <h1>Other Projects</h1>
-        <div class="row">
-            <div class="col-lg-4 col-md-6 pricing-card">
-                <div class="card h-100">
-                    <div class="card-header">
-                        <h2>Bio Inspired Neural Network</h2>
-                    </div>
-                    <div class="card-body">
-                        <h3>Grey-wolf optimizer algorithm implemented using python</h3>
-                        <a href="https://github.com/AyanoKen/Bioinspired-Neural-Network" target="_blank" class="btn btn-dark btn-lg download-button btn-block btn-outline-primary" type="button">Github link</a>
-                    </div>
-                </div>
-            </div>
-  
-            <div class="col-lg-4 col-md-6 pricing-card">
-                <div class="card h-100">
-                    <div class="card-header">
-                        <h2>Brain Tumor Detection</h2>
-                    </div>
-                    <div class="card-body">
-                        <h3>Brain Tumor detection algorithm using digital image processing and machine learning</h3>
-                        <a href="https://github.com/AyanoKen/Brain-Tumor-Detection" target="_blank" class="btn btn-lg btn btn-dark download-button btn-block btn-outline-primary" type="button">Github link</a>
-                    </div>
-                </div>
-            </div>
-  
-            <div class="col-lg-4 col-md-6 pricing-card">
-                <div class="card h-100">
-                    <div class="card-header">
-                        <h2>Recommender System</h2>
-                    </div>
-                    <div class="card-body">
-                        <h3>A News Recommender System Algorithm made with Natural Language processing</h3>
-                        <a href="https://github.com/AyanoKen/Recommender-System" target="_blank" class="btn btn-lg btn-dark download-button btn-block btn-outline-primary" type="button">Github link</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-  
-        <div class="row">
-            <div class="col-lg-4 col-md-6 pricing-card">
-                <div class="card h-100">
-                    <div class="card-header">
-                        <h2>Tsunduko</h2>
-                    </div>
-                    <div class="card-body">
-                        <h3>An E-Magazine website that I made for my university's literature club</h3>
-                        <a href="https://github.com/AyanoKen/E-Magazine" target="_blank" class="btn btn-lg btn-dark download-button btn-block btn-outline-primary" type="button">Github link</a>
-                    </div>
-                </div>
-            </div>
-  
-            <div class="col-lg-4 col-md-6 pricing-card">
-                <div class="card h-100">
-                    <div class="card-header">
-                        <h2>MMO Mart</h2>
-                    </div>
-                    <div class="card-body">
-                        <h3>Online market for an MMO RPG Game which can be used to sell or buy in game items by players. Made using Node.js and MongoDB</h3>
-                        <a href="https://github.com/AyanoKen/MMO-Market" target="_blank" class="btn btn-lg btn-dark download-button btn-block btn-outline-primary" type="button">Github link</a>
-                    </div>
-                </div>
-            </div>
-  
-            <div class="col-lg-4 col-md-6 pricing-card">
-                <div class="card h-100">
-                    <div class="card-header">
-                        <h2>Weather app</h2>
-                    </div>
-                    <div class="card-body">
-                        <h3>Weather forcast mobile app made with dart</h3>
-                        <a href="https://github.com/AyanoKen/Weather-App" target="_blank" class="btn btn-lg btn-dark download-button btn-block btn-outline-primary" type="button">Github link</a>
-                    </div>
-                </div>
-            </div>
-  
-        </div>
-  
-        <div class="row">
-          <div class="col-lg-4 col-md-6 pricing-card">
-              <div class="card h-100">
-                  <div class="card-header">
-                      <h2>Nova Drift - UX Study</h2>
-                  </div>
-                  <div class="card-body">
-                      <h3>A study on the UX and UI of the early access game "Nova Drift"</h3>
-                      <a href="https://github.com/AyanoKen/UX-Study-NovaDrift" target="_blank" class="btn btn-lg btn-dark download-button btn-block btn-outline-primary" type="button">Github link</a>
-                  </div>
-              </div>
-          </div>
-  
-  
+    <footer>
+      <p style="margin: 10px 0; color: #00fff6; font-size: 1rem;">&copy; 2025 Ayano / Kireet. All rights reserved.</p>
+      <div>
+        <a href="https://github.com/AyanoKen" target="_blank" style="margin: 0 10px; color: #00fff6; text-decoration: none;">
+          <i class="fab fa-github" style="font-size: 1.5rem;"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/kireet-gannavarapu/" target="_blank" style="margin: 0 10px; color: #00fff6; text-decoration: none;">
+          <i class="fab fa-linkedin" style="font-size: 1.5rem;"></i>
+        </a>
+        <a href="mailto:ayanoken64@gmail.com" style="margin: 0 10px; color: #00fff6; text-decoration: none;">
+          <i class="fas fa-envelope" style="font-size: 1.5rem;"></i>
+        </a>
       </div>
+    </footer>
   
-    </section>
-  </div>
-
-  <div id="art-view">
-      <div id="models" class="carousel slide white-section" data-ride="false">
-          <h1>3D ArtWork</h1>
-          <div class="carousel-inner">
-              <div class="carousel-item">
-                  <div class="row">
-                      <div class="col-md-6 artwork-landscape">
-                          <img src="images/SnowGlobe.png" alt="artwork">
-                      </div>
-                      <div class="col-md-6 artwork-landscape">
-                          <img src="images/SnowGlobe2.png" alt="artwork">
-                      </div>
-                  </div>
-              </div>
-
-              <div class="carousel-item active">
-                  <div class="row">
-                      <div class="col-md-6 artwork-landscape">
-                          <img src="images/Chess1.png" alt="artwork">
-                      </div>
-                      <div class="col-md-6 artwork-landscape">
-                          <img src="images/chess.png" alt="artwork">
-                      </div>
-                  </div>
-              </div>
-
-              <div class="carousel-item">
-                  <div class="row">
-                      <div class="col-md-6 artwork-landscape">
-                          <img src="images/Astroids.png" alt="artwork">
-                      </div>
-                      <div class="col-md-6 artwork-landscape">
-                          <img src="images/Candles.png" alt="artwork">
-                      </div>
-                  </div>
-              </div>
-
-              <div class="carousel-item">
-                  <div class="row">
-                      <div class="col-md-6 artwork-landscape">
-                          <img src="images/Donuts.png" alt="artwork">
-                      </div>
-                      <div class="col-md-6 artwork-landscape">
-                          <img src="images/Lorax.png" alt="artwork">
-                      </div>
-                  </div>
-              </div>
-
-              <div class="carousel-item">
-                  <div class="row">
-                      <div class="col-md-6 artwork-landscape">
-                          <img src="images/EnSemble.png" alt="artwork">
-                      </div>
-                      <div class="col-md-6 artwork-landscape">
-                          <img src="images/Aldamon-Texture.png" alt="artwork">
-                      </div>
-                  </div>
-              </div>
-
-              <div class="carousel-item">
-                  <div class="row">
-                      <div class="col-md-6 artwork-landscape">
-                          <video src="images/PRISMA.mp4" width="100%" autoplay controls="false"></video>
-                      </div>
-                      <div class="col-md-6 artwork-landscape">
-                          <video src="images/StarWELL.mp4" width="100%" autoplay controls="false"></video>
-                      </div>
-                  </div>
-              </div>
-
-              <div class="carousel-item">
-                  <div class="row">
-                      <div class="col-md-6 artwork-landscape">
-                          <img src="images/Teddy_final.png" alt="artwork">
-                      </div>
-                      <div class="col-md-6 artwork-landscape">
-                          <img src="images/Egyptcat.png" alt="artwork">
-                      </div>
-                  </div>
-              </div>
-
-              <div class="carousel-item">
-                  <div class="row">
-                      <div class="col-md-6 artwork-landscape">
-                          <img src="images/JellyFish.jpg" alt="artwork">
-                      </div>
-                      <div class="col-md-6 artwork-landscape">
-                          <img src="images/Jellyfish.png" alt="artwork">
-                      </div>
-                  </div>
-              </div>
-
-              <div class="carousel-item">
-                  <div class="row">
-                      <div class="col-md-6 artwork-landscape">
-                          <img src="images/Leomon1.png" alt="artwork">
-                      </div>
-                      <div class="col-md-6 artwork-landscape">
-                          <img src="images/Leomon2.png" alt="artwork">
-                      </div>
-                  </div>
-              </div>
-
-          </div>
-          <a class="carousel-control-prev" href="#models" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#models" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-          </a>
-      </div>
-
-      <div class="colored-section">
-          <h1>Unreal Engine - His Life</h1>
-
-          <div class="game-showcase">
-              <div class="game-video">
-                  <iframe width="100%"
-                          height="450"
-                          src="https://www.youtube.com/embed/_0ek0nY1bs4"
-                          frameborder="0"
-                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                          allowfullscreen>
-                  </iframe>
-              </div>
-              <div class="game-supporting-content">
-                  <div class="game-carousel">
-                      <div><img src="images/HisLife/GameScreenshot1.png" alt="Game Screenshot 1"></div>
-                      <div><img src="images/HisLife/GameScreenshot2.png" alt="Game Screenshot 2"></div>
-                      <div><img src="images/HisLife/GameScreenshot3.png" alt="Game Screenshot 3"></div>
-                      <div><img src="images/HisLife/GameScreenshot4.png" alt="Game Screenshot 3"></div>
-                      <div><img src="images/HisLife/GameScreenshot5.png" alt="Game Screenshot 3"></div>
-                      <div><img src="images/HisLife/GameScreenshot6.png" alt="Game Screenshot 1"></div>
-                      <div><img src="images/HisLife/GameScreenshot7.png" alt="Game Screenshot 2"></div>
-                      <div><img src="images/HisLife/GameScreenshot8.png" alt="Game Screenshot 3"></div>
-                      <div><img src="images/HisLife/GameScreenshot9.png" alt="Game Screenshot 3"></div>
-                      <div><img src="images/HisLife/GameScreenshot10.png" alt="Game Screenshot 3"></div>
-                  </div>
-                  <div class="game-description">
-                      <p>
-                          Ever wondered about the adventures your grandfather has experienced in his lifetime? Him, close to the end of his life, narrating various stories to you, his grandchild.
-                          <br> <br>
-                          "His Life", is an adventure puzzler where you get to experience that. The game has three memories, each of which featuring a different movement mechanic.
-                          <br><br>
-                          <strong>Team Size: </strong>10
-                          <br>
-                          <strong>Development Cycle: </strong>3 Months
-                          <br>
-                          <strong>My Role: </strong>Creative Director, Programmer, Artist
-                      </p>
-                  </div>
-              </div>
-          </div>
-
-      </div>
-
-      <div class="white-section">
-          <h1>Unity VR - Echos of War</h1>
-
-          <div class="game-showcase">
-              <div class="game-video">
-                  <iframe width="100%"
-                          height="450"
-                          src="https://www.youtube.com/embed/mHBEyzFZqeY"
-                          frameborder="0"
-                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                          allowfullscreen>
-                  </iframe>
-              </div>
-
-              <div class="game-supporting-content">
-                  <div class="game-carousel">
-                      <div><img src="images/VrMuseum/GameScreenshot1.png" alt="Game Screenshot 1"></div>
-                      <div><img src="images/VrMuseum/GameScreenshot2.png" alt="Game Screenshot 2"></div>
-                      <div><img src="images/VrMuseum/GameScreenshot3.png" alt="Game Screenshot 3"></div>
-                      <div><img src="images/VrMuseum/GameScreenshot4.png" alt="Game Screenshot 3"></div>
-                      <div><img src="images/VrMuseum/GameScreenshot5.png" alt="Game Screenshot 3"></div>
-                      <div><img src="images/VrMuseum/GameScreenshot6.png" alt="Game Screenshot 1"></div>
-                      <div><img src="images/VrMuseum/GameScreenshot7.png" alt="Game Screenshot 2"></div>
-                      <div><img src="images/VrMuseum/GameScreenshot8.png" alt="Game Screenshot 3"></div>
-                      <div><img src="images/VrMuseum/GameScreenshot9.png" alt="Game Screenshot 3"></div>
-                      <div><img src="images/VrMuseum/GameScreenshot10.png" alt="Game Screenshot 3"></div>
-                  </div>
-                  <div class="game-description">
-                      <p>
-                          Does anyone ever win in a war? Humanity's history is rich but at the same time stained in blood. So many victories but the foundation is the corpses and woes of millions. Was it ever worth the sufferings?
-                          <br> <br>
-                          "Echos of War", is an immersive VR museum experience that takes users through the haunting memories and stories left in the wake of war.
-                          Each room and corridor is meticulously crafted with visual storytelling, ambient soundscapes, and meaningful narratives that guide the user through a
-                          powerful journey of remembrance and reflection. With detailed environments and an intuitive flow between exhibits,
-                          Echoes of War challenges the boundary between virtual and reality, offering a deeply moving experience that emphasizes the importance of memory and history.
-                          <br><br>
-                          <strong>Team Size: </strong>1
-                          <br>
-                          <strong>Development Cycle: </strong>6 weeks
-                      </p>
-                  </div>
-              </div>
-          </div>
-
-      </div>
-
-      <div class="white-section">
-          <h1>Unity - Get Out</h1>
-
-          <div class="game-showcase">
-              <div class="game-video">
-                  <iframe width="100%"
-                          height="450"
-                          src="https://www.youtube.com/embed/LwF2nFlZP40"
-                          frameborder="0"
-                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                          allowfullscreen>
-                  </iframe>
-              </div>
-
-              <div class="game-supporting-content">
-                  <div class="game-carousel">
-                      <div><img src="images/Maze/GameScreenshot1.png" alt="Game Screenshot 1"></div>
-                      <div><img src="images/Maze/GameScreenshot2.png" alt="Game Screenshot 2"></div>
-                      <div><img src="images/Maze/GameScreenshot3.png" alt="Game Screenshot 3"></div>
-                      <div><img src="images/Maze/GameScreenshot4.png" alt="Game Screenshot 3"></div>
-                  </div>
-                  <div class="game-description">
-                      <p>
-                          So you have played platformer mazes before. But have you been in a maze that even the developer cannot solve without looking at the map?
-                          <br> <br>
-                          "Get Out", is a Maze Platformer game made in Unity to be a game that challenges the player's memory, patience and problem solving skills.
-                          The game features enemies that attack the player, traps the player can die to and most importantly, paths that are long just to end in a loop or a dead end.
-                          <br><br>
-                          <strong>Team Size: </strong>1
-                          <br>
-                          <strong>Development Cycle: </strong>2 weeks
-                      </p>
-                  </div>
-              </div>
-          </div>
-
-      </div>
-
-      <div class="colored-section">
-          <h1>Unreal Engine - Budget FallGuys</h1>
-
-          <div class="game-showcase">
-              <div class="game-video">
-                  <iframe width="100%"
-                          height="450"
-                          src="https://www.youtube.com/embed/Bzm6P4sLhBs"
-                          frameborder="0"
-                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                          allowfullscreen>
-                  </iframe>
-              </div>
-
-              <div class="game-supporting-content">
-                  <div class="game-carousel">
-                      <div><img src="images/FallGuys/GameScreenshot1.png" alt="Game Screenshot 1"></div>
-                      <div><img src="images/FallGuys/GameScreenshot2.png" alt="Game Screenshot 2"></div>
-                      <div><img src="images/FallGuys/GameScreenshot3.png" alt="Game Screenshot 3"></div>
-                      <div><img src="images/FallGuys/GameScreenshot4.png" alt="Game Screenshot 3"></div>
-                      <div><img src="images/FallGuys/GameScreenshot5.png" alt="Game Screenshot 3"></div>
-                  </div>
-                  <div class="game-description">
-                      <p>
-                          "Budget FallGuys", as the name states is a FallGuys inspired mini adventure puzzler. Made in Unreal Engine 5 with a challenging obstacle course
-                          <br><br>
-                          <strong>Team Size: </strong>1
-                          <br>
-                          <strong>Development Cycle: </strong>1 week
-                      </p>
-                  </div>
-              </div>
-          </div>
-
-      </div>
-
-      <div class="white-section">
-          <h1>Unity Engine - Forest of The Dead</h1>
-
-          <div class="game-showcase">
-              <div class="game-video">
-                  <iframe width="100%"
-                          height="450"
-                          src="https://www.youtube.com/embed/HqGPUR88oTQ"
-                          frameborder="0"
-                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                          allowfullscreen>
-                  </iframe>
-              </div>
-
-
-              <div class="game-supporting-content">
-                  <div class="game-carousel">
-                      <div><img src="images/FallGuys/GameScreenshot1.png" alt="Game Screenshot 1"></div>
-                      <div><img src="images/FallGuys/GameScreenshot2.png" alt="Game Screenshot 2"></div>
-                      <div><img src="images/FallGuys/GameScreenshot3.png" alt="Game Screenshot 3"></div>
-                      <div><img src="images/FallGuys/GameScreenshot4.png" alt="Game Screenshot 3"></div>
-                      <div><img src="images/FallGuys/GameScreenshot5.png" alt="Game Screenshot 3"></div>
-                  </div>
-                  <div class="game-description">
-                      <p>
-                          You are stuck in an unknown land, all you have are 4 guns but none of them have any ammo. In the distance, you see strange creatures which look bloodthirsty. What would you do
-                          <br><br>
-                          "Forest of The Dead" is a zombie <strong>First Person Shooter </strong> with the player having to search for ammunition along with being careful about their surroundings.
-                          The game features an open world along with players having the choice either to choose violence or be sneaky around the map (Or do they?)
-                          <br><br>
-                          <strong>Team Size: </strong>1
-                          <br>
-                          <strong>Development Cycle: </strong>4 weeks
-                      </p>
-                  </div>
-              </div>
-          </div>
-
-      </div>
-
-    <div class="white-section">
-      <h1>Unreal Engine - VR Unpacking</h1>
-      
-      <div class="game-showcase">
-        <div class="game-video">
-          <iframe 
-            width="100%" 
-            height="450" 
-            src="https://www.youtube.com/embed/qxm1qLjEVRU" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen>
-          </iframe>
-        </div>
-
-        <div class="game-supporting-content">
-          <div class="game-carousel">
-            <div><img src="images/VRUnpacking/GameScreenshot1.png" alt="Game Screenshot 1"></div>
-            <div><img src="images/VRUnpacking/GameScreenshot2.png" alt="Game Screenshot 2"></div>
-            <div><img src="images/VRUnpacking/GameScreenshot3.png" alt="Game Screenshot 3"></div>
-            <div><img src="images/VRUnpacking/GameScreenshot4.png" alt="Game Screenshot 3"></div>
-            <div><img src="images/VRUnpacking/GameScreenshot5.png" alt="Game Screenshot 3"></div>
-          </div>
-          <div class="game-description">
-            <p>
-              I loved playing Unpacking. When my professor asked us to make a object customization game in VR, I decided to make VR version of Unpacking instead. 
-              <br> <br>
-              "VR Unpacking" is a game were the player wakes up from their cryo chamber as they get close to reaching a new planet in their space adventure. The final few days as they
-              wait will be in the empty room that they have been given, but it is upto them to arrange their room the way they want. 
-              <br><br> 
-              <strong>Team Size: </strong>1
-              <br>
-              <strong>Development Cycle: </strong>1 week
-            </p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="white-section">
-      <h1>WebGame - Purdue Alternate Reality Game</h1>
-      
-      <div class="game-showcase">
-        <div class="game-video">
-          <iframe 
-            width="100%" 
-            height="450" 
-            src="https://www.youtube.com/embed/BeN-R7UKJyY" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen>
-          </iframe>
-        </div>
-
-        <div class="game-supporting-content">
-          <div class="game-carousel">
-            <div><img src="images/ARG/GameScreenshot1.png" alt="Game Screenshot 1"></div>
-            <div><img src="images/ARG/GameScreenshot2.png" alt="Game Screenshot 2"></div>
-            <div><img src="images/ARG/GameScreenshot3.png" alt="Game Screenshot 3"></div>
-            <div><img src="images/ARG/GameScreenshot4.png" alt="Game Screenshot 3"></div>
-            <div><img src="images/ARG/GameScreenshot5.png" alt="Game Screenshot 3"></div>
-            <div><img src="images/ARG/GameScreenshot6.png" alt="Game Screenshot 2"></div>
-            <div><img src="images/ARG/GameScreenshot7.png" alt="Game Screenshot 3"></div>
-            <div><img src="images/ARG/GameScreenshot8.png" alt="Game Screenshot 3"></div>
-            <div><img src="images/ARG/GameScreenshot9.png" alt="Game Screenshot 3"></div>
-          </div>
-          <div class="game-description">
-            <p>
-              A professor missing on the campus. The trail of clues leading to a lot of AI related conspiracies 
-              <br> <br>
-              "Purdue ARG" is a web based Alternate Reality game developed as a way to promote AI education on Purdue Campus, the project is for the Google AI Summit at Indianapolis, 2024 
-              <br><br> 
-              <strong>Team Size: </strong>3
-              <br>
-              <strong>Development Cycle: </strong>4 months
-              <br>
-              <strong>My Role: </strong>Front end developer, Backend Developer, Database management.
-            </p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-
-  </div>
-
-  <footer id="footer" class="white-section">
-    <a href="https://github.com/AyanoKen"><i class="fab fa-github"></i></a>
-    <a href="https://www.linkedin.com/in/kireet-gannavarapu/"><i class="fab fa-linkedin"></i></a>
-    <a href="mailto:ayanoken64@gmail.com"><i class="fas fa-envelope"></i></a>
-    <p>© 2024 Ayano / Kireet. All rights reserved.</p>
-  </footer>
-  </section>
-
-</body>
-
-<!-- Slick CSS -->
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-
-<!-- Slick JS -->
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
-<!-- Initialize the Carousel -->
-<script>
-  $(document).ready(function(){
-    $('.game-carousel').slick({
-      dots: true,
-      infinite: true,
-      speed: 500,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      arrows: true,
-    });
-  });
-</script>
-
-<script>
-  $(document).ready(function(){
-    $('#videoCarousel').carousel();
-  });
-
-  document.querySelectorAll('.art-trigger').forEach(button => {
-      button.addEventListener('click', function() {
-          document.getElementById("main-view").classList.add("hidden");
-          document.getElementById("art-view").classList.remove("hidden");
-      });
-  });
-
-  document.querySelectorAll('.main-trigger').forEach(button => {
-      button.addEventListener('click', function() {
-          document.getElementById("main-view").classList.remove("hidden");
-          document.getElementById("art-view").classList.add("hidden");
-      });
-  });
-
-
-</script>
-
-
-</html>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+  
+  </html>
+  
