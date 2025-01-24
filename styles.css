@@ -217,6 +217,14 @@ h2 {
   text-align: center;
 }
 
+.white-section h1 {
+  padding-bottom: 2%;
+}
+
 #ai-projects {
   padding: 6%;
+}
+
+.artwork-landscape img{
+  width: 100%;
 }
