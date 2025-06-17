@@ -260,9 +260,10 @@ h2 {
 
 .game-carousel img {
   width: 100%;
-  max-height: 400px;
-  border-radius: 8px;
+  max-height: 700px;
+  border-radius: 10px;
   object-fit: cover;
+  transition: transform 0.3s ease;
 }
 
 .slick-prev:before, .slick-next:before {
@@ -283,7 +284,7 @@ h2 {
 
   .game-carousel {
     flex: 1;
-    max-width: 500px;
+    max-width: 800px;
     margin: auto;
   }
 
@@ -292,6 +293,67 @@ h2 {
     padding: 0 20px;
   }
 }
+
+.upgraded-layout {
+  gap: 40px;
+}
+
+.video-and-description {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.video-and-description .game-video {
+  flex: 1;
+  min-width: 300px;
+}
+
+.video-and-description .game-description {
+  flex: 1;
+  text-align: left;
+  padding: 0 10px;
+}
+
+.highlight-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.highlight-list li {
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.highlight-list li::before {
+  content: "✦";
+  position: absolute;
+  left: 0;
+  color: #00fff6;
+  text-shadow: 0 0 6px #00fff6;
+}
+
+@media (max-width: 768px) {
+  .video-and-description {
+    flex-direction: column;
+  }
+
+  .video-and-description .game-description {
+    text-align: center;
+  }
+
+  .highlight-list li {
+    text-align: left;
+    margin: 10px auto;
+    max-width: 90%;
+  }
+}
+
 
 
 @media (max-width:1020px){
@@ -303,3 +365,4 @@ h2 {
     text-align: center;
   }
 }
+
